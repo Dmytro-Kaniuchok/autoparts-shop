@@ -1,0 +1,114 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  padding: 24px 0;
+}
+
+.headerContainer {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.leftSide {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.rightSide {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.logo {
+  z-index: 2;
+}
+
+/* Кнопка кошика */
+.cartButton {
+  position: relative;
+  background: #f1f5f9;
+  border: none;
+  border-radius: 12px;
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-weight: 600;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.cartButton:hover {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+/* Лічильник товарів */
+.cartCount {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  background: #ef4444;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Телефон */
+.phoneBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.phoneRow {
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.phoneRow svg {
+  flex-shrink: 0;
+}
+
+.phone {
+  font-size: 16px;
+  font-weight: 600;
+  color: #334155;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.phone:hover {
+  color: #2563eb;
+}
+
+.phoneTime {
+  font-size: 12px;
+  color: #94a3b8;
+  margin-left: 30px;
+}

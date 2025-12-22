@@ -1,0 +1,41 @@
+.nav {
+  display: flex;
+  gap: 32px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.navLink {
+  color: #334155; /* slate-700 - темно-сірий */
+  transition: color 0.15s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  position: relative;
+  padding: 6px 0;
+}
+
+.navLink:hover {
+  color: #2563eb;
+}
+
+.navLink:hover .navIcon {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.navLink::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0%;
+  height: 2px;
+  background: linear-gradient(to right, #2563eb, #06b6d4);
+  transition: width 0.3s ease;
+}
+
+.navLink:hover::after {
+  width: 100%;
+}
