@@ -76,7 +76,7 @@ export default function Footer() {
             </a>
           </p>
 
-          <p>Адреса: м. Харків, вул. Шевченка, 1</p>
+          <p>Адреса: м. Харків, вул. Георгія Тарасенка, 12</p>
         </div>
 
         <div className={css.footerSchedule}>
