@@ -4,6 +4,18 @@
   width: 100%;
 }
 
+.heroInner {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.leftContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .banner {
   display: inline-flex;
   align-items: center;
@@ -17,6 +29,7 @@
 }
 
 .icon {
+  display: inline-block;
   width: 20px;
   height: 20px;
   margin-right: 8px;
@@ -84,12 +97,17 @@
   transform: translateY(-50%) translateX(8px);
 }
 
-.icon {
-  display: inline-block;
-  width: 20px;
-  height: 20px;
-}
-
 .searchButton {
   color: #fff;
+}
+
+/* Адаптивність для мобільних */
+@media (max-width: 1024px) {
+  .heroInner {
+    flex-direction: column;
+  }
+
+  .rightContent {
+    margin-top: 30px;
+  }
 }

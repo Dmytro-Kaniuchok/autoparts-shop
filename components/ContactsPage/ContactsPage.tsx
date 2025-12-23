@@ -159,7 +159,7 @@ export default function ContactsPage() {
               </div> */}
             </div>
 
-            {/* Права колонка - Карта */}
+            {/* Карта */}
             <div className={css.rightColumn}>
               <div className={css.mapCard}>
                 <h2 className={css.sectionTitle}>Як нас знайти</h2>
@@ -172,7 +172,6 @@ export default function ContactsPage() {
                   ></iframe>
                 </div>
 
-                {/* Кнопка маршруту */}
                 <a
                   href="https://www.google.com/maps/dir/?api=1&destination=49.982576,36.248647"
                   target="_blank"
@@ -197,7 +196,6 @@ export default function ContactsPage() {
         </div>
       </section>
 
-      {/* Features Section */}
       <section className={css.featuresSection}>
         <div className={css.container}>
           <h2 className={css.featuresTitle}>Чому обирають нас?</h2>
